@@ -1,0 +1,5 @@
+filter:
+    excluded_paths: [vendor/*]
+checks:
+    php:
+        code_rating: true

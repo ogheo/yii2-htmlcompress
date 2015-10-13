@@ -1,0 +1,22 @@
+{
+    "name": "smilemd/yii2-htmlcompress",
+    "description": "Compress HTML output into a single line",
+    "keywords": ["yii2", "html", "compress", "minify", "minimize", "output", "view"],
+    "type": "yii2-extension",
+    "license": "MIT",
+    "homepage": "https://github.com/smilemd/yii2-htmlcompress",
+    "authors": [
+        {
+            "name": "SmileMD",
+            "email": "smileeerr@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "smilemd\\htmlcompress\\": "src"
+        }
+    }
+}
