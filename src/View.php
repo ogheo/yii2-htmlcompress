@@ -43,7 +43,7 @@ class View extends \yii\web\View
      * @param $html
      * @return mixed
      */
-    private function compress($html)
+    private static function compress($html)
     {
         $filters = array(
             // remove HTML comments except IE conditions
