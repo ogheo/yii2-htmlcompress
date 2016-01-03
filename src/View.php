@@ -47,15 +47,15 @@ class View extends \yii\web\View
     {
         $filters = array(
             // remove HTML comments except IE conditions
-            '/<!--(?!\s*(?:\[if [^\]]+]|<!|>))(?:(?!-->).)*-->/s' => '',
+            '/<!--(?!\s*(?:\[if [^\]]+]|<!|>))(?:(?!-->).)*-->/us' => '',
             // remove comments in the form /* */
-            '/(?<!\S)\/\/\s*[^\r\n]*/' => '',
+            '/(?<!\S)\/\/\s*[^\r\n]*/u' => '',
             // shorten multiple white spaces
-            '/>\s{2,}</' => '><',
+            '/>\s{2,}</u' => '> <',
             // shorten multiple white spaces
-            '/\s{2,}/' => ' ',
+            '/\s{2,}/u' => ' ',
             // collapse new lines
-            '/(\r?\n)/' => '',
+            '/(\r?\n)/u' => '',
         );
 
         $output = preg_replace(array_keys($filters), array_values($filters), $html);
