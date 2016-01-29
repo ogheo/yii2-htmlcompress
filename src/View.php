@@ -49,7 +49,7 @@ class View extends \yii\web\View
             // remove HTML comments except IE conditions
             '/<!--(?!\s*(?:\[if [^\]]+]|<!|>))(?:(?!-->).)*-->/s' => '',
             // remove comments in the form /* */
-            '/(?<!\S)\/\/\s*[^\r\n]*/' => '',
+            '/\/+?\s*\*[\s\S]*?\*\s*\/+/' => '',
             // shorten multiple white spaces
             '/>\s{2,}</' => '><',
             // shorten multiple white spaces
