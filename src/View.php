@@ -43,11 +43,13 @@ class View extends \yii\web\View
      * @param $html
      * @return mixed
      */
-    private static function compress($html)
+    public static function compress($html)
     {
         $filters = array(
-            // remove javascript comments
-            '/(?:<script[^>]*>|\G(?!\A))(?:[^"\/<]+|<(?!\/script))*+\K\/\/[^\n]*/xsu' => '',
+            // remove // comments that doesnt contain ' or "
+            '/(?:[^"\']|\'.*[^\']\'|".*[^"]")\K\/\/[^\'"]+$/mU' => '',
+            // remove // that has something in front of them
+            '/(?:".*[^"]"|\'.*[\']\')(?:[^\/])\K\/\/.*$/mU' => '',
             // remove html comments except IE conditions
             '/<!--(?!\s*(?:\[if [^\]]+]|<!|>))(?:(?!-->).)*-->/su' => '',
             // remove comments in the form /* */

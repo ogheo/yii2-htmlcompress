@@ -1,0 +1,31 @@
+'http://should.not.be.removed' // hue
+"http://should.not.be.removed"
+'https://should.not.be.removed'
+"https://should.not.be.removed"
+'//should.not.be.removed'
+"//should.not.be.removed"
+{
+    foo://should.be.removed
+    lala:"//should.not.be.removed"
+    haja:"//should.not.be.removed"//should be removed but ok if not
+    lalala:"//should.not.be.removed",//should be removed
+    yolo:"https://should.not.be.removed";//should be removed
+    yolo:"http://should.not.be.removed";//should be removed
+}
+//should be removed
+// should be removed
+// http://should be removed
+//http://should.be.removed
+// https://should be removed
+//https://should.be.removed
+https://should.be.removed
+http://should.be.removed
+"yolo yolo yolo https://should.not.be.removed.but.ok.if.removed yolo yolo yolo"
+"https://should.not.be.removed", "https://should.not.be.removed"
+"https://should.not.be.removed", "//should.not.be.removed" //shoud be removed
+"https://should.not.be.removed", "//should.not.be.removed"
+'https://should.not.be.removed', '//should.not.be.removed'
+"https://shoud.not.be.removed" //shoud be removed"
+
+
+ahaha: "//trolololo.com"//should be removed
