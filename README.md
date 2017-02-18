@@ -1,4 +1,4 @@
-# yii2-htmlcompress [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE) [![Scrutinizer](https://img.shields.io/scrutinizer/g/smilemd/yii2-htmlcompress.svg?style=flat-square)](https://scrutinizer-ci.com/g/smilemd/yii2-htmlcompress/) [![Packagist](https://img.shields.io/packagist/dt/doctrine/orm.svg?maxAge=2592000?style=flat-square)](https://packagist.org/packages/smilemd/yii2-htmlcompress)
+# yii2-htmlcompress [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE) [![Scrutinizer](https://img.shields.io/scrutinizer/g/smilemd/yii2-htmlcompress.svg?style=flat-square)](https://scrutinizer-ci.com/g/smilemd/yii2-htmlcompress/) [![Packagist](https://img.shields.io/packagist/dt/doctrine/orm.svg?style=flat-square)](https://packagist.org/packages/smilemd/yii2-htmlcompress)
 
 Compress HTML output into a single line
 
