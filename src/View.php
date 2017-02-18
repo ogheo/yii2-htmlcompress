@@ -46,10 +46,8 @@ class View extends \yii\web\View
     public static function compress($html)
     {
         $filters = array(
-            // remove // comments that doesnt contain ' or "
-            '/(?:[^"\']|\'.*[^\']\'|".*[^"]")\K\/\/[^\'"]+$/mU' => '',
-            // remove // that has something in front of them
-            '/(?:".*[^"]"|\'.*[\']\')(?:[^\/])\K\/\/.*$/mU' => '',
+            // remove javascript comments
+            '/(?:<script[^>]*>|\G(?!\A))(?:[^\'"\/<]+|"(?:[^\\"]+|\\.)*"|\'(?:[^\\\']+|\\.)*\'|\/(?!\/)|<(?!\/script))*+\K\/\/[^\n|<]*/xsu' => '',
             // remove html comments except IE conditions
             '/<!--(?!\s*(?:\[if [^\]]+]|<!|>))(?:(?!-->).)*-->/su' => '',
             // remove comments in the form /* */
