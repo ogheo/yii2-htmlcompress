@@ -1,8 +1,8 @@
 <?php
 
-namespace smilemdunit\htmlcompress\unit;
+namespace ogheounit\htmlcompress\unit;
 
-use smilemd\htmlcompress\View;
+use ogheo\htmlcompress\View;
 
 class JsCommentRemovalTest extends \PHPUnit\Framework\TestCase
 {

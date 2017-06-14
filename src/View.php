@@ -1,10 +1,10 @@
 <?php
 
-namespace smilemd\htmlcompress;
+namespace ogheo\htmlcompress;
 
 /**
  * Class View
- * @package smilemd\htmlcompress
+ * @package ogheo\htmlcompress
  */
 class View extends \yii\web\View
 {

@@ -10,5 +10,5 @@ $_SERVER['SCRIPT_FILENAME'] = __FILE__;
 require_once(__DIR__ . '/../vendor/autoload.php');
 require_once(__DIR__ . '/../vendor/yiisoft/yii2/Yii.php');
 
-Yii::setAlias('@smilemdunit/htmlcompress', __DIR__);
-Yii::setAlias('@smilemd/htmlcompress', dirname(__DIR__));
+Yii::setAlias('@ogheounit/htmlcompress', __DIR__);
+Yii::setAlias('@ogheo/htmlcompress', dirname(__DIR__));

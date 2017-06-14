@@ -1,14 +1,14 @@
 {
-    "name": "smilemd/yii2-htmlcompress",
+    "name": "ogheo/yii2-htmlcompress",
     "description": "Compress HTML output into a single line",
     "keywords": ["yii2", "html", "compress", "minify", "minimize", "output", "view"],
     "type": "yii2-extension",
     "license": "MIT",
-    "homepage": "https://github.com/smilemd/yii2-htmlcompress",
+    "homepage": "https://github.com/ogheo/yii2-htmlcompress",
     "authors": [
         {
-            "name": "SmileMD",
-            "email": "smileeerr@gmail.com"
+            "name": "Oleg Gheorghita",
+            "email": "oleg.gheo@gmail.com"
         }
     ],
     "require": {
@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "smilemd\\htmlcompress\\": "src"
+            "ogheo\\htmlcompress\\": "src"
         }
     }
 }
